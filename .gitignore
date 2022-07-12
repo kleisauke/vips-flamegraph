@@ -44,3 +44,4 @@
 perf.data
 perf.data.old
 output/*.jpg
+output/*.png
