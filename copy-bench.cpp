@@ -10,7 +10,7 @@ int main(int argc, char **argv) {
     vips_error_exit("usage: %s input-file output-file", argv[0]);
 
   VImage in = VImage::new_from_file(
-          argv[1], VImage::option()->set("access", VIPS_ACCESS_SEQUENTIAL));
+    argv[1], VImage::option()->set("access", VIPS_ACCESS_SEQUENTIAL));
   in.write_to_file(argv[2]);
 
   vips_shutdown();

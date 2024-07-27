@@ -43,5 +43,8 @@
 ### FlameGraph ####
 perf.data
 perf.data.old
+
+# User-specific stuff
 output/*.jpg
 output/*.png
+output/*.tif

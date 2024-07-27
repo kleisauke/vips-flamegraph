@@ -9,8 +9,7 @@ int main(int argc, char **argv) {
   if (argc != 3)
     vips_error_exit("usage: %s input-file output-file", argv[0]);
 
-  VImage in = VImage::new_from_file(
-          argv[1], VImage::option()->set("access", VIPS_ACCESS_SEQUENTIAL));
+  VImage in = VImage::new_from_file(argv[1]);
 
   VImage mask = VImage::new_matrixv(3, 3,
                                     -1.0, -1.0, -1.0,
